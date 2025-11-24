@@ -1,16 +1,47 @@
-# React + Vite
+🌟 Hoja de Vida - Esteban Bedoya
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto desarrollado con React + Vite
 
-Currently, two official plugins are available:
+Este repositorio contiene el código fuente de mi Hoja de Vida (HV) construida con React, utilizando Vite para un entorno rápido y moderno de desarrollo.
+Aquí muestro mi información personal, perfil profesional, formación, experiencia y habilidades relevantes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⸻
 
-## React Compiler
+🚀 Tecnologías utilizadas
+	•	React
+	•	Vite
+	•	JavaScript (ES6+)
+	•	HTML5 & CSS3
+	•	Flexbox / Grid
+	•	Componentes funcionales
+	•	Hooks (useState, useEffect, etc.)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⸻
 
-## Expanding the ESLint configuration
+📂 Estructura del proyecto
+mi-cv-react/
+├── src/
+│   ├── components/
+│   ├── App.jsx
+│   └── main.jsx
+├── public/
+├── package.json
+└── vite.config.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧑‍💻 Descripción del proyecto
+
+Este proyecto consiste en una aplicación web donde presento mi Hoja de Vida de manera visual y organizada.
+Dentro de la app podrás encontrar:
+	•	Foto de perfil
+	•	Información personal
+	•	Perfil profesional
+	•	Formación académica
+	•	Experiencia laboral
+	•	Habilidades (técnicas y blandas)
+	•	Enlaces de contacto
+
+    📧 Contacto
+
+Esteban Bedoya
+📍 Colombia
+🔗 GitHub: https://github.com/esteban01Br
