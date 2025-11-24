@@ -10,7 +10,7 @@ function Educacion() {
 
   return (
     <section className="section">
-      <h2>Educación y Formación</h2>
+      <h1>Educación y Formación Complementaria</h1>
       <ul>
         {formaciones.map((f, index) => (
           <li key={index}>
