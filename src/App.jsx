@@ -1,55 +1,39 @@
-import React from "react";
+import { useState } from "react";
+import { tecnologiasIniciales } from "./cvData";
+  
 import CabeceraCV from "./components/CabeceraCV";
 import Perfil from "./components/Perfil";
-import Experiencia from "./components/Experiencia";
 import Educacion from "./components/Educacion";
+import Experiencia from "./components/Experiencia";
+import StackTecnologias from "./components/StackTecnologias";
+import Proyectos from "./components/Proyectos";
+import Habilidades from "./components/Habilidades";
+import ToggleHabilidades from "./components/ToggleHabilidades";
+import FormularioTecnologia from "./components/FormularioTecnologia";
 
-function App() {
-  // =============================
-  // 1. DATOS DEFINIDOS EN APP.jsx
-  // =============================
-  const datosPersonales = {
-    nombre: "Esteban Bedoya",
-    cargo: "Desarrollador Frontend",
-    ciudad: "Medellín, Colombia",
-    contacto: "esteban@example.com"
+export default function App() {
+  const [tecnologias, setTecnologias] = useState(tecnologiasIniciales);
+
+  const agregarTecnologia = (nuevaTec) => {
+    setTecnologias((prev) => [...prev, nuevaTec]);
   };
 
-  const resumen = "Desarrollador frontend con experiencia en React, JavaScript y diseño de interfaces modernas.";
-
-  const experiencias = [
-    { cargo: "Front-End Developer", empresa: "TechNova", periodo: "2024" },
-    { cargo: "Practicante Desarrollador", empresa: "CodeFactory", periodo: "2023" },
-    { cargo: "Freelancer Web", empresa: "Autónomo", periodo: "2022" },
-  ];
-
-  const estudios = [
-    { institucion: "SENA", curso: "Tecnólogo en ADSO", año: "2025" },
-    { institucion: "Platzi", curso: "Curso de React", año: "2024" },
-    { institucion: "Google", curso: "UX/UI Fundamentals", año: "2023" }
-  ];
-
   return (
-    <div className="container">
-      {/* 2. Envías props a cada componente */}
-      <CabeceraCV 
-        nombre={datosPersonales.nombre}
-        cargo={datosPersonales.cargo}
-        ciudad={datosPersonales.ciudad}
-        contacto={datosPersonales.contacto}
-      />
+    <>
+      <CabeceraCV />
+      <Perfil />
+      <Experiencia />
+      <Educacion />
 
-      <Perfil resumen={resumen} />
+      <FormularioTecnologia agregarTecnologia={agregarTecnologia} />
 
-      <Experiencia experiencias={experiencias} />
+      <StackTecnologias tecnologias={tecnologias} />
 
-      <Educacion estudios={estudios} />
-    </div>
+      <ToggleHabilidades>
+        <Habilidades />
+      </ToggleHabilidades>
+
+      <Proyectos />
+    </>
   );
-}
-
-export default App;
-
-// ajustes de componentes cv
-// segundo commit test
-
+  }
